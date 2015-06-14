@@ -16,6 +16,10 @@
 		font-size: 100%;
 		font: inherit;
 		vertical-align: baseline;
+		
+		/*Webkit has some font thickness problems*/
+		-webkit-text-stroke: 0.25px;
+		-webkit-font-smoothing: antialiased;
 	}
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -2534,7 +2538,7 @@
 		#footer strong, #footer b {
 			color: rgba(255, 255, 255, 0.8);
 		}
-
+		/*
 		#footer .icons {
 			margin: 1em 0 0 0;
 		}
@@ -2542,7 +2546,7 @@
 			#footer .icons a {
 				color: rgba(255, 255, 255, 0.8);
 			}
-
+			*/
 		#footer .copyright {
 			color: rgba(255, 255, 255, 0.4);
 			font-size: 0.8em;
