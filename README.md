@@ -1,1 +1,1 @@
-# SimonJinaphant.github.io
+My personal webpage, based on the Strata theme by HTML5 UP
