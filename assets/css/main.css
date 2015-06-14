@@ -2450,11 +2450,16 @@
 		.work-item .image {
 			margin: 0 0 1.5em 0;
 		}
+		
+		.work-item a{
+			color: #49bf9d;
+		}
 
 		.work-item h3{
 			margin: 0 0 0.15em 0;
 			line-height: 1.2em;
 			margin-bottom: 0.3em;
+			color:inherit;
 		}
 		
 		.work-item h4 {
@@ -2504,13 +2509,21 @@
 			margin: 0 0 1em 0;
 			width: 6.25em;
 		}
+		
+		#header .icons {
+			margin: 1em 0 0 0;
+		}
+
+			#header .icons a {
+				color: rgba(255, 255, 255, 0.8);
+			}
 
 /* Footer */
 
 	#footer {
 		bottom: 0;
 		left: 0;
-		padding: 0 4em 6em 0;
+		padding: 0 4em 2em 0;
 		position: fixed;
 		text-align: right;
 		
@@ -2559,10 +2572,17 @@
 /* Occupation_Header */
 
 	.occupation_header {
-			}
+			
+		}
+		
+		.occupation_header a {
+			color: #49bf9d;
+			text-decoration: none;
+			border-bottom: none;
+		}
 
 		.occupation_header .image{
-			display: inline-block;
+			display inline-block;
 		}
 		
 		.occupation_header h2 {
@@ -2584,15 +2604,21 @@
 		
 		.resume header h4{
 			line-height: 1em;
+			font-size: 1em;
 		}
 		
-		.resume ul{
-			margin-top: -1.75em;
-			margin-left: 1em;
+		.resume p{
+			font-size: 1em;
 		}
-			.resume ul li{
-				margin-bottom: 0.1em;
+		
+			.resume ul{
+				margin-top: -1.75em;
+				margin-left: 1em;
 			}
+				.resume ul li{
+					margin-bottom: 0.1em;
+					font-size: 0.95em;
+				}
 	
 /* Main */
 
