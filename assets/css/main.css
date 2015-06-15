@@ -1986,7 +1986,7 @@
 		}
 
 		.icon > .label {
-			display: none;
+			/*display: none;*/
 		}
 
 /* Image */
@@ -3102,6 +3102,13 @@
 				#header h1 {
 					font-size: 1.35em;
 				}
+				
+				/*Hide labels when screen is tight on space*/
+				
+				#header .icon > .label {
+					display: none;
+				}
+
 
 		/* Footer */
 
@@ -3136,7 +3143,13 @@
 /* XSmall */
 
 	@media screen and (max-width: 480px) {
-
+		
+		/*Hide labels when screen is tight on space*/
+				
+			#header .icon > .label {
+				display: none;
+			}
+		
 		/* List */
 
 			ul.actions {
