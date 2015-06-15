@@ -1595,7 +1595,7 @@
 		}
 
 	strong, b {
-		color: #787878;
+		color: #585858;
 		font-weight: 400;
 	}
 
@@ -1611,14 +1611,14 @@
 		color: #787878;
 		font-weight: 200;
 		line-height: 1.2em;
-		margin: 0 0 1em 0;
+		margin-bottom: 0.8em;
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 			color: inherit;
 			text-decoration: none;
 		}
-
+	/*GLOBAL ADJUST*/
 	h1 {
 		font-size: 2em;
 		line-height: 1.5em;
@@ -1627,26 +1627,29 @@
 	h2 {
 		font-size: 1.5em;
 		line-height: 1.2em;
+		margin-bottom: 0.4em;
 	}
 
 	h3 {
 		font-size: 1.25em;
-		line-height: 0.5em;
+		line-height: 1.2em;
+		margin-bottom: 0.4em;
 	}
 
 	h4 {
 		font-size: 1.1em;
-		line-height: 0.5em;
+		line-height: 1.2em;
+		margin-bottom: 0.4em;
 	}
 
 	h5 {
 		font-size: 0.9em;
-		line-height: 0.5em;
+		line-height: 1.2em;
 	}
 
 	h6 {
 		font-size: 0.7em;
-		line-height: 0.5em;
+		line-height: 1.2em;
 	}
 
 	sub {
@@ -1713,6 +1716,7 @@
 	.align-right {
 		text-align: right;
 	}
+
 
 /* Section/Article */
 
@@ -2099,6 +2103,11 @@
 
 /* List */
 
+	.indent{
+		margin-left: 1em;
+		
+	}
+
 	ol {
 		list-style: decimal;
 		margin: 0 0 2em 0;
@@ -2113,6 +2122,7 @@
 		list-style: disc;
 		margin: 0 0 2em 0;
 		padding-left: 1em;
+		
 	}
 
 		ul li {
@@ -2473,7 +2483,7 @@
 		}
 
 		.work-item p {
-			font-size: 0.9em;
+			font-size: 1em;
 			line-height: 1.4em;
 			margin: 0;
 		}
@@ -2573,26 +2583,13 @@
 					color: inherit;
 				}
 
-/* Occupation_Header */
 
-	.occupation_header {
-			
-		}
-		
-		.occupation_header a {
-			color: #49bf9d;
-			text-decoration: none;
-			border-bottom: none;
-		}
 
-		.occupation_header .image{
-			display inline-block;
-		}
-		
-		.occupation_header h2 {
-			margin-bottom: 0.4em;
-		}
-		
+
+.highlight_link a{
+	color: #49bf9d;
+	border-bottom: none;
+}
 
 
 /* Resume */
@@ -2609,16 +2606,14 @@
 		.resume header h4{
 			line-height: 1em;
 			font-size: 1em;
+			margin-bottom: 0.6em;
 		}
 		
 		.resume p{
 			font-size: 1em;
+			margin-bottom: 0.4em;
 		}
 		
-			.resume ul{
-				margin-top: -1.75em;
-				margin-left: 1em;
-			}
 				.resume ul li{
 					margin-bottom: 0.1em;
 					font-size: 0.95em;
