@@ -2590,6 +2590,15 @@
 		color: #49bf9d;
 		border-bottom: none;
 	}
+	
+	.no_bullets{
+		list-style: none;
+		padding-left: 0em;
+		
+	}
+		.no_bullets li{
+			margin-bottom: 0.5em;
+		}
 
 
 /* Resume */
@@ -2921,7 +2930,11 @@
 				max-width: 960;
 				padding: 6em 3em 3em 3em;
 			}
-
+			#header h3{
+				max-width: 360px;
+				margin-left: auto;
+			}
+			
 	}
 
 /* Large */
@@ -2943,6 +2956,11 @@
 					#header h1 br {
 						display: none;
 					}
+					
+				#header h3{
+					max-width: none;
+					margin: 0px;
+				}
 
 		/* Footer */
 
@@ -3106,7 +3124,6 @@
 				/*Hide labels when screen is tight on space*/
 				
 				#header .icon > .label {
-					display: none;
 				}
 
 
