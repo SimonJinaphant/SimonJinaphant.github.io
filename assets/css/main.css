@@ -2584,12 +2584,12 @@
 				}
 
 
+/* Misc */
 
-
-.highlight_link a{
-	color: #49bf9d;
-	border-bottom: none;
-}
+	.highlight_link a{
+		color: #49bf9d;
+		border-bottom: none;
+	}
 
 
 /* Resume */
