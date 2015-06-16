@@ -95,12 +95,12 @@
 				}
 
 		// Main Sections: Two.
-		/*
+		
 			// Lightbox gallery.
 				$window.on('load', function() {
 
-					$('#projects').poptrox({
-						caption: function($a) { return $a.next('a').text(); },
+					$('#projectile_launchers').poptrox({
+						caption: function($a) { return $a.next('h4').text(); },
 						overlayColor: '#2c2c2c',
 						overlayOpacity: 0.85,
 						popupCloserText: '',
@@ -114,7 +114,7 @@
 					});
 
 				});
-		*/
+		
 	});
 
 })(jQuery);
