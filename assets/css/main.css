@@ -2090,6 +2090,7 @@
 		.image.avatar {
 			border-radius: 100%;
 			width: 100%;
+			border: 2px solid rgba(255, 255, 255, 0.3);
 		}
 
 			.image.avatar:before {
@@ -2098,7 +2099,7 @@
 
 			.image.avatar img {
 				border-radius: 100%;
-				width: 100%;
+				width:100%;
 			}
 
 /* List */
@@ -2520,8 +2521,9 @@
 		}
 
 		#header .image.avatar {
+			/*CHANGE AVATAR SIZE HERE*/
 			margin: 0 0 1em 0;
-			width: 6.25em;
+			width: 8.25em;
 		}
 		
 		#header .icons {
@@ -3025,6 +3027,11 @@
 					#header h1 br {
 						display: inline;
 					}
+					
+				#header .image.avatar {
+					/*CHANGE AVATAR SIZE -FOR SMALL DEVICE- HERE*/
+					width: 6.25em;
+				}
 
 		/* Footer */
 
