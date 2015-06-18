@@ -40,116 +40,136 @@
 
 						<div class="row">			
 							<article class="12u$ 12u$(xsmall) work-item">
-								<a href="images/fulls/team2.png" class="image fit thumb"><img src="images/thumbs/snowbots_team1.jpg" alt="" /></a>
+								<a href="images/fulls/team1.png" class="image fit thumb"><img src="images/thumbs/snowbots_team1.jpg" alt="" /></a>
 								<h4>Team photo during the Intelligent Ground Vehicle Competition of 2015</h4>
 								<p>
 									<br/>
-									To give engineering students hand’s on experience, first years taking APSC 150 must work in a team to
-									design, construct, and present a projectile launcher. Due to the evolving nature of this course, 
-									students enrolled in the second term of the 2014 winter sessions were specifically required 
-									to have their launcher shoot the payloads into four different targets.
-									<br/><br/>
-									Students are divided into groups of eight, and were given <i>almost</i> free creativity over the design of their launchers, 
-									which they must deliver over the next five weeks. Each groups were expected to design two launchers and pick one for 
-									competition based on their preference from testing.
+									I joined UBC Snowbots during my first week of university in order to meet other like-minded students 
+									and get an exposure to the field of robotics and automation. This team is completely comprised of undergraduate 
+									students who are dedicated to the research and development of autonomous ground vehicles. 
+									Although my work primarily relates to software development, I also had the pleasure to work with other 
+									students who are developing the mechanical and electrical portion.
 								</p>
 							</article>
+							
+							<article class="6u 12u(xsmall) work-item">
+								<p>
+									In my first year of Snowbots I was also one of eight members selected to attend the team’s annual international competition. 
+									This was also the team’s second year returning to the Intelligent Ground Vehicle Competition (IGVC), hosted by Oakland University in Michigan. 
+									<br/><br/>
+									We managed to rank 4th in design and 5th in networking, out of the 40 registered teams from around the world!
+								</p>
+							</article>
+							
+							<article class="6u$ 12u(xsmall) work-item">
+								<a href="images/fulls/igvc_awards.jpg" class="image fit thumb"><img src="images/thumbs/igvc_awards.jpg" alt="" /></a>
+								<h4>A picture of our IGVC 2015 awards</h4>
+							</article>
+							
 						</div>
 						
 						<hr>
-						<h1><span class="icon fa-check-square-o"></span> REQUIREMENTS AND RESPONSIBILITIES</h1>
+						<h1><span class="icon fa-wrench"></span> TECHNICAL DETAILS AND RESPONSIBILITIES</h1>
 						
 						<div class="row">
 							<article class="6u 12u$(xsmall) work-item">
-								<a href="images/fulls/circuits.jpg" class="image fit thumb"><img src="images/thumbs/circuits.jpg" alt="" /></a>
-								<h4>The circuitry for the Arduino boards</h4>
+								<a href="images/fulls/snowflake.jpg" class="image fit thumb"><img src="images/thumbs/snowflake.jpg" alt="" /></a>
+								<h4>A complete picture of our 2015 robot: Snowflake</h4>
 							</article>
 							
 							<article class="6u$ 12u$(xsmall) work-item">
 								<p>
-									The main requirements for the launcher included a joystick, linked to an Arduino, which must be used to control a maximum of three servos; 
-									these servos can control the launcher’s pitch and yaw angle, along with the triggering mechanism to shoot the payload.
+									The software portion of our robot is primarily written in C++, using the Robot Operating System (ROS) framework, 
+									with some specific portions written in Python and C. 
 									<br/><br/>
-									The circuitry for controlling the servos, along with the software, were given and allowed to be modified.
-								</p>
-							</article>
-							
-							<article class="12u$ 12u$(xsmall) work-item">
-								<p>
-									In my group, I was responsible for understanding the circuitry and software, 
-									along with adjusting them to allow more flexibility in our design options.
+									In the vision system we also use OpenCV to provide fast 
+									image processing and capturing techniques, which is essential to our performance critical situation, especially when our 
+									software executes on a consumer grade laptop running Ubuntu.
 									<br/><br/>
-									During the design weeks many teams had to work outside of the given lab time; 
-									I also had to ensure participation and cooperation between my fellow team members by managing team 
-									communication and establishing meetings outside of class time.
+									As a member of the software team, I am also responsible for maintaining the codebase shared with many active developers by 
+									following the team’s coding standards and resolving version control conflicts.
+									<br/><br/>
+									I am also responsible for upholding safety protocols in a workshop environment, along with handling fragile equipments each worth over $1,000 
+									-including a LIDAR laser scanner, estimated to be worth around $15,000!
 								</p>
 							</article>
 						</div>
 						
 						<hr>
-						<h1><span class="icon fa-gears"></span> THE DESIGN PROCESS</h1>
+						<h1><span class="icon fa-street-view"></span> AI: PATHFINDING</h1>
 	
 						<div class="row">
 							<article class="6u 12u$(xsmall) work-item">
-								<a href="images/fulls/prototype_limitless.jpg" class="image fit thumb"><img src="images/thumbs/prototype_limitless.jpg" alt="" /></a>
-								<h4>A sample design schematic for <i>Limitless</i></h4>
+								<p>
+									Due to my prior experience with pathfinding algorithms, 
+									I was assigned to AI team to collaborate in the development of the robot’s core autonomous navigation software; 
+									here I lead the research and development of various pathfinding algorithms, 
+									in order to determine a suitable one for navigating a 200 ft by 100 ft outdoor obstacle course. 
+									<br/><br/>
+									My current accomplishments include the implementation of static pathfinding algorithms such as A*, 
+									along with dynamic ones like D* Lite and its derivation: MT-D*Lite.
+								</p>
 							</article>
 							
 							<article class="6u$ 12u$(xsmall) work-item">
+								<a href="images/fulls/simulation.jpg" class="image fit thumb"><img src="images/thumbs/simulation.jpg" alt="" /></a>
+								<h4>An attempt to simulate pathfinding with Gazebo</h4>
+							</article>
+						
+							<article class="12u$ work-item">
 								<p>
-									Together with my group, we proposed our two design models and divided into smaller groups of four to begin our work. 
+									The reason I chose to focus dynamic pathfinding was because our robot must learn about its 
+									surrounding environment as it moves with a limited range of vision, thus producing the problem of dynamic obstacles, 
+									or to be more accurate, the problem of additional obstacles at run-time. 
 									<br/><br/>
-									The first proposed design, uses all of the three servos provided in order to control the trigger, pitch, and yaw angles. 
+									Dynamic pathfinding algorithms such as D* and MT-D*Lite operate by producing an initial path and re-computing it, 
+									using previous results to minimize computation, when changes are detected -thus making it a suitable solution to our problem.
+								</p>
+							</article>
+						</div>
+						
+						<hr>
+						<h1><span class="icon fa-globe"></span> AI: MAPPING</h1>
+						
+						<div class="row">	
+							<article class="6u 12u$(xsmall) work-item">
+								<a href="images/fulls/rviz.jpg" class="image fit thumb"><img src="images/thumbs/rviz.jpg" alt="" /></a>
+								<h4>Data from our laser scanner being shown on RVIZ</h4>
+							</article>
+						
+							<article class="6u$ 12u$(xsmall) work-item">
+								<p>
+									In addition to pathfinding, the AI team is also responsible for developing the mapping software; 
+									here we faced the challenge of concurrently mapping the surrounding environment while the robot moves and discovers more. 
 									<br/><br/>
-									This launcher was codename <i>Limitless</i>, due to its restriction-free controls.
+									We collect our mapping data from the robot’s laser scanner and computer vision system, 
+									in addition to integrating the data with the compass in order to localize ourself on the map.
+								</p>
+							</article>
+						</div>
+												
+						<hr>
+						<h1><span class="icon fa-eye"></span> COMPUTER VISION</h1>
+						
+						<div class="row">	
+							<article class="6u 12u$(xsmall) work-item">
+								<p>
+									During the upcoming weeks for competition, I assisted the vision team by profiling the runtime 
+									performance of the camera capturing and image stitching software, 
+									along with implementing some optimizations which resulted in a performance boost by a factor of 4x in best case scenarios.
+									<br/><br/>
+									I also helped fully integrate our ROS nodes with OpenCV libraries, 
+									and developed a proper emergency shutdown technique to resolve memory leak and port re-connection issues, 
+									resulting in more productive debugging time.
 								</p>
 							</article>
 							
 							<article class="6u 12u$(xsmall) work-item">
-								<p>							
-									The second launcher, which I worked on, was designed to be unique compared to the rest.
-									<br/><br/>
-									Instead of using all three servos to have complete control, we physically restricted the pitch angle of the launcher 
-									and only used two servos to trigger and adjust the yaw angle. 
-									<br/><br/>
-									To complement the first design’s codename, I suggested to name this launcher <i>Limited Edition</i>.
-								</p>
-							</article>
-							
-							<article class="6u$ 12u$(xsmall) work-item">
-								<a href="images/fulls/prototype_limited.jpg" class="image fit thumb"><img src="images/thumbs/prototype_limited.jpg" alt="" /></a>
-								<h4>A sample design schematic for <i>Limited Edition</i></h4>
-							</article>
-							
-							<article class="12u$ 12u$(xsmall) work-item">
-								<p>
-									In order to have <i>Limited Edition</i> be capable of shooting into all four targets, we needed a new way of adjusting the launcher’s firing range. 
-									Since we cannot adjust the pitch angle we were forced to adjust the tension from the rubber bands. 
-									The design for this included a <i>“tension selector”</i> which essentially provided a way to hook the rubber band in 
-									three different places for different tension strength.
-								</p>
+								<a href="images/fulls/cameras.jpg" class="image fit thumb"><img src="images/thumbs/cameras.jpg" alt="" /></a>
+								<h4>A closeup picture of the robot's mounted webcams</h4>
 							</article>
 							
 						</div>
-						
-						<hr>
-						<h1><span class="icon fa-bookmark-o"></span> THE FINAL RESULTS</h1>
-						
-						<div class="row">	
-							<article class="12u$ 12u$(xsmall) work-item">
-								<a href="images/fulls/prototypes.jpg" class="image fit thumb"><img src="images/thumbs/prototypes.jpg" alt="" /></a>
-								<h4>The resulting launchers: <i>Limited Edition</i> on the left, and <i>Limitless</i> on the right</h4>
-								<p>
-									<br/>
-									For the competition we selected <i>Limitless</i> over <i>Limited Edition</i>, the prime reason was due to the reloading speed. 
-									While <i>Limited Edition</i> provided a unique way to launch the payload, reloading it via the tension selector was difficult and time consuming. 
-									<br/><br/>
-									Our choice to focus on reloading speed eventually paid off during competition when we scored 4 out of 8 points which 
-									ranked us amongst the top teams, whereas many other teams had difficulties reloading, making them run out of time.
-								</p>
-							</article>
-						</div>
-						
 					</section>
 					
 			</div>
