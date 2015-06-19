@@ -1,0 +1,203 @@
+<!DOCTYPE HTML>
+<!--
+	This webpage was based on the Strata theme by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Simon Jinaphant | UBC Computer Engineering Student</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body id="top">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="/" class="image avatar"><img src="images/self_portrait_small.jpg" alt="Simon" /></a>
+				<h3>I am <strong>Simon Jinaphant</strong>, a Computer Engineering student developing software and robots in my free time!</h3>
+				<br/><br/>
+				<ul class="icons">
+					<h4><strong>Stay connected with me</strong></h4>
+					<li><a href="https://www.linkedin.com/in/symonjin" class="icon fa-linkedin-square"><span class="label"> LinkedIn</span></a></li>
+					<li><a href="https://github.com/SimonJinaphant" class="icon fa-github"><span class="label"> Github</span></a></li>
+					<li><a href="#" class="icon fa-envelope-o"><span class="label"> Email</span></a></li>
+				</ul>
+			</header>
+
+		<!-- Main -->
+			<div id="main">
+
+					<section id="projectile_launchers">
+						<header class="major">
+							<h1>ANDROID MAZE SOLVER | PERSONAL PROJECT</h1>
+						</header>
+
+						<div class="row">			
+							<article class="12u$ 12u$(xsmall) work-item">
+								<h4>
+									My summer project for 2014: a visually interactive android application where users can create their own maze 
+									and observe a solution be computed within milliseconds!
+								</h4>
+								<p>
+									<br/>
+									Pathfinding algorithms are popularly used as a means of AI for video games and robotics; 
+									they serve to navigate an entity through an obstacle filled environment within optimal time by computing the shortest path. 
+									Throughout the development stages of this application I have also attained a deeper understanding and appreciation 
+									for the logic behind these pathfinding algorithms.
+								</p>
+							</article>
+						</div>
+						
+						<hr>
+						<h1><span class="icon fa-question-circle"></span> WHY USE PATHFINDING?</h1>
+						
+						<div class="row">
+							
+							<article class="6u 12u$(xsmall) work-item">
+								<a href="images/fulls/maze/unsolved_maze.png" class="image fit thumb"><img src="images/thumbs/maze/unsolved_maze.png" alt="" /></a>
+								<h4>A common maze: the green cell is our starting point</h4>
+							</article>
+												
+							<article class="6u$ 12u$(xsmall) work-item">
+								<p>
+									Computing a solution for a maze can easily be achieved with a simple brute force algorithm such as a flood-fill, 
+									however this isn’t always the best approach, especially when we can estimate how far our goal position is.
+									<br/><br/>
+									I self-taught myself programming by breaking down open source projects and studying the internal mechanism of it. 
+									Most of the projects I stumbled upon were intended for video games, and the problem of traversing from Point A to 
+									Point B without running into an obstacle was a common theme.
+								</p>
+							</article>
+							
+							<article class="12u$ 12u$(xsmall) work-item">
+								<p>
+									One of the most frequent solution was to implement A*, a heuristic based search algorithm that incorporates the 
+									fundamentals of Dijkstra and Best First Search in order to compute the shortest path with minimal search time.
+								</p>
+							</article>
+							
+						</div>
+						
+						<hr>
+						<h1><span class="icon fa-street-view"></span> AN OVERVIEW OF A*</h1>
+	
+						<div class="row">
+							<article class="6u 12u$(xsmall) work-item">
+								<p>
+									Best First Search is sometimes referred to as a “greedy” algorithm; it utilizes heuristic, 
+									a technique for estimating the distance between two position, 
+									to speed up the search by prioritizing certain elements for analysis.
+									<br/><br/>
+									When this estimation is integrated with Dijkstra, where each element is assigned a cost in order to 
+									quantify which path is more expensive than another: an effective search algorithm is created.
+								</p>
+							</article>
+							
+							<article class="6u$ 12u$(xsmall) work-item">
+								<a href="images/fulls/maze/priority.png" class="image fit thumb"><img src="images/thumbs/maze/priority.png" alt="" /></a>
+								<h4>A* Prioritizing the marked grey cells</h4>
+							</article>
+						</div>
+						
+						<hr>
+						<h1><span class="icon fa-gears"></span> DEVELOPMENT AND OPTIMIZATIONS</h1>
+						
+						<div class="row">	
+						
+							<article class="12u$ 12u$(xsmall) work-item">
+								<p>
+									I originally started the project in Python because of its easier to build a working prototype. 
+									I studied A* from various online resources including its original research paper, 
+									but mostly spent my hours debugging by stepping through the code during runtime; 
+									although it was repetitive and exhausting, this experience has given me a deeper understanding 
+									and appreciation for pathfinding algorithms.
+									<br/><br/>
+									Midway through the development process I noticed how the algorithm’s performance was lacking, 
+									originally I thought it was Python being slow, but further investigation and searches lead me 
+									to conclude that it was primarily the way I was storing my data.
+									<br/><br/>
+									A* needs to prioritize certain elements, but storing these elements while keeping its priority was tricky. 
+									A naive attempt, to dump the elements in a list and search for the best one every time, 
+									had tremendous consequences for the performance.
+									Sorting the list every time an element was added or removed also wasn’t going to be helpful because only 
+									a small partition would ever requirement to be reordered.
+									<br/><br/>
+									To solve this problem I had to use a Priority Queue -also known as a binary heap depending on its implementation- 
+									where elements are stored relative to their priority. The most favoured elements were located the front -or root, 
+									whereas the least are near the back -or leaf. Removing the root element is as easy as swapping it with a leaf node and popping it. 
+									Insertion was also simple as the heap only had to operate on certain sub-heaps. 
+									This implementation had greatly increase  my A* calculation speed by a factor of 3x at minimum!
+								</p>
+							</article>
+						</div>
+												
+						<hr>
+						<h1><span class="icon fa-android"></span> PORTING TO ANDROID</h1>
+						
+						<div class="row">	
+							<article class="6u 12u$(xsmall) work-item">
+								<p>
+									By the time the pathfinding was fully operational, my summer was approaching its end, 
+									and I was starting my first year of university within a couple of weeks. 
+									Telling people that I could do pathfinding is impressive, but not as impressive as being able to demonstrate it live. 
+									<br/><br/>
+									I took this opportunity -in addition to the fact that I got my first smartphone around this time too- 
+									to learn a fair amount of the Android framework in order to create an graphical display to for interacting with the pathfinder. 
+									I also had to port all of my previous code to Java, but it was not a concern as I also had previous experience developing with Java.
+									<br/><br/>
+									By September I had my summer project loaded onto my phone, I could simply take it out my pocket and leave some people in awe, 
+									particularly those who don’t know much about programming; this also made my transition into university easier as 
+									I would commonly demonstrate my app to get a conversation started when meeting new people.
+								</p>
+							</article>
+							
+							<article class="6u 12u$(xsmall) work-item">
+								<a href="images/fulls/maze/solved_maze.png" class="image fit thumb"><img src="images/thumbs/maze/solved_maze.png" alt="" /></a>
+								<h4>The final result: a maze solver on Android</h4>
+							</article>
+							
+						</div>
+						
+						<hr>
+						<h1><span class="icon fa-bookmark"></span> FUTURE WORK</h1>
+						
+						<div class="row">	
+							<article class="12u$ 12u$(xsmall) work-item">
+								<p>
+									This opportunity has also led me into studying more pathfinding algorithms; while A* is a good candidate for finding the shortest path, 
+									it has its limitations. Different variations based on A* have been developed with new ones constantly being created to this day; 
+									these variations includes features such as pre-processing, angular movement, and even fast re-calculation for changing obstacles.
+									<br/><br/>
+									I have managed to implement a couple of these variations over at <a href="snowbots">UBC Snowbots</a>, 
+									where my pathfinding work is being applied to autonomously navigate real-life robots!
+							</article>
+							
+						</div>
+						
+					</section>
+					
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<ul class="copyright">
+					<li>&copy; 2015 Simon Jinaphant</li><li>Template by: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
