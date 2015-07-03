@@ -3129,6 +3129,11 @@
 					font-size: 1.35em;
 				}
 				
+				#header .image.avatar {
+					/*CHANGE AVATAR SIZE -FOR SMALL DEVICE- HERE*/
+					display: none;
+				}
+				
 				/*Hide labels when screen is tight on space*/
 				
 				#header .icon > .label {
