@@ -99,7 +99,7 @@
 			// Lightbox gallery.
 				$window.on('load', function() {
 
-					$('#projectile_launchers').poptrox({
+					$('#gallery').poptrox({
 						caption: function($a) { return $a.next('h4').text(); },
 						overlayColor: '#2c2c2c',
 						overlayOpacity: 0.85,
@@ -114,7 +114,7 @@
 					});
 
 				});
-		
+						
 	});
 
 })(jQuery);
