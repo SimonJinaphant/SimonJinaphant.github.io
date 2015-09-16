@@ -34,73 +34,58 @@
 
 					<section id="gallery">
 						<header class="major">
-							<h1>ANDROID PATHFINDER | PERSONAL PROJECT</h1>
+							<h1>MODEL SIMULATOR | PERSONAL PROJECT</h1>
 						</header>
 
 						<div class="row">			
 							<article class="12u$ 12u$(xsmall) work-item">
+								<a href="images/fulls/modelsim/sidebyside.png" class="image fit thumb"><img src="images/thumbs/modelsim/sidebyside.png" alt="" /></a>
+
 								<h4>
-									My summer project for 2014: a visually interactive android application where users can create their own maze 
-									and observe a solution be computed within milliseconds!
+									In the late summer of 2015 I tried out OpenGL and its web based counterpart WebGL.
+									</br>
+									This project is still under construction, but majority of the features have already been implemented.
 								</h4>
-								<p>
-									<br/>
-									Pathfinding algorithms are popularly used as a means of AI for video games and robotics; 
-									they serve to navigate an entity through an obstacle filled environment within optimal time by computing the shortest path. 
-									Throughout the development stages of this application I have also attained a deeper understanding and appreciation 
-									for the logic behind these pathfinding algorithms.
-								</p>
 							</article>
 						</div>
 						
 						<hr>
-						<h1><span class="icon fa-question-circle"></span> WHY USE PATHFINDING?</h1>
+						<h1><span class="icon fa-question-circle"></span> WHY OPENGL</h1>
 						
 						<div class="row">
 							
 							<article class="6u 12u$(xsmall) work-item">
-								<a href="images/fulls/pathfinder/unsolved_maze.png" class="image fit thumb"><img src="images/thumbs/pathfinder/unsolved_maze.png" alt="" /></a>
-								<h4>A common maze: the green cell is our starting point</h4>
+								<a href="images/fulls/modelsim/cube.png" class="image fit thumb"><img src="images/thumbs/modelsim/cube.png" alt="" /></a>
+								<h4>A single 3D textured cube with lighting enabled</h4>
 							</article>
 												
 							<article class="6u$ 12u$(xsmall) work-item">
 								<p>
-									Computing a solution for a maze can easily be achieved with a simple brute force algorithm such as a flood-fill, 
-									however this isn’t always the best approach, especially when we can estimate how far our goal position is.
-									<br/><br/>
-									I self-taught myself programming by breaking down open source projects and studying the internal mechanism of it. 
-									Most of the projects I stumbled upon were intended for video games, and the problem of traversing from Point A to 
-									Point B without running into an obstacle was a common theme.
+									At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
 								</p>
 							</article>
 							
 							<article class="12u$ 12u$(xsmall) work-item">
 								<p>
-									One of the most frequent solution was to implement A*, a heuristic based search algorithm that incorporates the 
-									fundamentals of Dijkstra and Best First Search in order to compute the shortest path with minimal search time.
+									Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur
 								</p>
 							</article>
 							
 						</div>
 						
 						<hr>
-						<h1><span class="icon fa-street-view"></span> AN OVERVIEW OF A*</h1>
+						<h1><span class="icon fa-street-view"></span> TITLE HERE</h1>
 	
 						<div class="row">
 							<article class="6u 12u$(xsmall) work-item">
 								<p>
-									Best First Search is sometimes referred to as a “greedy” algorithm; it utilizes heuristic, 
-									a technique for estimating the distance between two position, 
-									to speed up the search by prioritizing certain elements for analysis.
-									<br/><br/>
-									When this estimation is integrated with Dijkstra, where each element is assigned a cost in order to 
-									quantify which path is more expensive than another: an effective search algorithm is created.
+									Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
 								</p>
 							</article>
 							
 							<article class="6u$ 12u$(xsmall) work-item">
-								<a href="images/fulls/pathfinder/priority.png" class="image fit thumb"><img src="images/thumbs/pathfinder/priority.png" alt="" /></a>
-								<h4>A* Prioritizing the marked grey cells</h4>
+								<a href="images/fulls/modelsim/cubes.png" class="image fit thumb"><img src="images/thumbs/modelsim/cubes.png" alt="" /></a>
+								<h4>Multiple cubes of the same Vertex Array Object (VAO) being rendered</h4>
 							</article>
 						</div>
 						
@@ -111,54 +96,24 @@
 						
 							<article class="12u$ 12u$(xsmall) work-item">
 								<p>
-									I originally started the project in Python because of its easier to build a working prototype. 
-									I studied A* from various online resources including its original research paper, 
-									but mostly spent my hours debugging by stepping through the code during runtime; 
-									although it was repetitive and exhausting, this experience has given me a deeper understanding 
-									and appreciation for pathfinding algorithms.
-									<br/><br/>
-									Midway through the development process I noticed how the algorithm’s performance was lacking, 
-									originally I thought it was Python being slow, but further investigation and searches lead me 
-									to conclude that it was primarily the way I was storing my data.
-									<br/><br/>
-									A* needs to prioritize certain elements, but storing these elements while keeping its priority was tricky. 
-									A naive attempt, to dump the elements in a list and search for the best one every time, 
-									had tremendous consequences for the performance.
-									Sorting the list every time an element was added or removed also wasn’t going to be helpful because only 
-									a small partition would ever requirement to be reordered.
-									<br/><br/>
-									To solve this problem I had to use a Priority Queue -also known as a binary heap depending on its implementation- 
-									where elements are stored relative to their priority. The most favoured elements were located the front -or root, 
-									whereas the least are near the back -or leaf. Removing the root element is as easy as swapping it with a leaf node and popping it. 
-									Insertion was also simple as the heap only had to operate on certain sub-heaps. 
-									This implementation had greatly increase  my A* calculation speed by a factor of 3x at minimum!
+									At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat
 								</p>
 							</article>
 						</div>
 												
 						<hr>
-						<h1><span class="icon fa-android"></span> PORTING TO ANDROID</h1>
+						<h1><span class="icon fa-android"></span> TITLE HERE</h1>
 						
 						<div class="row">	
 							<article class="6u 12u$(xsmall) work-item">
 								<p>
-									By the time the pathfinding was fully operational, my summer was approaching its end, 
-									and I was starting my first year of university within a couple of weeks. 
-									Telling people that I could do pathfinding is impressive, but not as impressive as being able to demonstrate it live. 
-									<br/><br/>
-									I took this opportunity -in addition to the fact that I got my first smartphone around this time too- 
-									to learn a fair amount of the Android framework in order to create an graphical display to for interacting with the pathfinder. 
-									I also had to port all of my previous code to Java, but it was not a concern as I also had previous experience developing with Java.
-									<br/><br/>
-									By September I had my summer project loaded onto my phone, I could simply take it out my pocket and leave some people in awe, 
-									particularly those who don’t know much about programming; this also made my transition into university easier as 
-									I would commonly demonstrate my app to get a conversation started when meeting new people.
+									Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur
 								</p>
 							</article>
 							
 							<article class="6u 12u$(xsmall) work-item">
-								<a href="images/fulls/pathfinder/solved_maze.png" class="image fit thumb"><img src="images/thumbs/pathfinder/solved_maze.png" alt="" /></a>
-								<h4>The final result: a maze solver via A* pathfinding on Android</h4>
+								<a href="images/fulls/modelsim/45torso.png" class="image fit thumb"><img src="images/thumbs/modelsim/45torso.png" alt="" /></a>
+								<h4>A 45 degrees view of the textured nanosuit model</h4>
 							</article>
 							
 						</div>
@@ -169,12 +124,7 @@
 						<div class="row">	
 							<article class="12u$ 12u$(xsmall) work-item">
 								<p>
-									This opportunity has also led me into studying more pathfinding algorithms; while A* is a good candidate for finding the shortest path, 
-									it has its limitations. Different variations based on A* have been developed with new ones constantly being created to this day; 
-									these variations includes features such as pre-processing, angular movement, and even fast re-calculation for changing obstacles.
-									<br/><br/>
-									I have managed to implement a couple of these variations over at <a href="snowbots">UBC Snowbots</a>, 
-									where my pathfinding work is being applied to autonomously navigate real-life robots!
+									Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur
 							</article>
 							
 						</div>
