@@ -4,3 +4,4 @@ which contains more information about me and contains a portfolio of my work.
 
 ##Credits
 Website template is based on the Strata theme from [HTML5 UP](http://html5up.net/)
+Free background photo downloaded from [Unsplash](http://unsplash.com/)
