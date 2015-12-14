@@ -1583,18 +1583,19 @@
 		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		border-bottom: dotted 1px;
-		color: #49bf9d;
+		color: #498cbf;
+		/*color: #498cbf;*/
 		text-decoration: none;
 	}
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #49bf9d !important;
+			color: #498cbf !important;
 			text-decoration: none;
 		}
 
 	strong, b {
-		color: #585858;
+		color: #595959;
 		font-weight: 400;
 	}
 
@@ -1804,7 +1805,7 @@
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #49bf9d;
+			border-color: #498cbf;
 		}
 
 	.select-wrapper {
@@ -1914,7 +1915,7 @@
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			border-color: #49bf9d;
+			border-color: #498cbf;
 		}
 
 	input[type="checkbox"] + label:before {
@@ -2370,8 +2371,8 @@
 		input[type="reset"]:hover,
 		input[type="button"]:hover,
 		.button:hover {
-			border-color: #49bf9d;
-			color: #49bf9d !important;
+			border-color: #498cbf;
+			color: #498cbf !important;
 		}
 
 		input[type="submit"]:active,
@@ -2379,8 +2380,8 @@
 		input[type="button"]:active,
 		.button:active {
 			background-color: rgba(73, 191, 157, 0.1);
-			border-color: #49bf9d;
-			color: #49bf9d !important;
+			border-color: #498cbf;
+			color: #498cbf !important;
 		}
 
 		input[type="submit"].icon,
@@ -2425,8 +2426,8 @@
 		input[type="reset"].special,
 		input[type="button"].special,
 		.button.special {
-			background-color: #49bf9d;
-			border-color: #49bf9d;
+			background-color: #498cbf;
+			border-color: #498cbf;
 			color: #ffffff !important;
 		}
 
@@ -2434,8 +2435,8 @@
 			input[type="reset"].special:hover,
 			input[type="button"].special:hover,
 			.button.special:hover {
-				background-color: #5cc6a7;
-				border-color: #5cc6a7;
+				background-color: #3878a9;
+				border-color: #3878a9;
 			}
 
 			input[type="submit"].special:active,
@@ -2470,7 +2471,7 @@
 		}
 		
 		.work-item a{
-			color: #49bf9d;
+			color: #498cbf;
 		}
 
 		.work-item h3{
@@ -2497,12 +2498,13 @@
 /* Header */
 
 	#header {
-		background-color: #1f1815;
+		background-color: rgba(0.0, 0.0, 0.0, 0.5);
 		background-attachment: scroll,				 fixed;
-		background-image: url("images/overlay.png"), url("../../images/bg2.jpg");
+		background-image: url("images/overlay.png"), url("../../images/bg3.jpg");
 		background-position: top left,				 top left;
 		background-repeat: repeat,					 no-repeat;
 		background-size: auto,						 auto;
+		
 		color: rgba(30, 30, 30, 0.5);
 		height: 100%;
 		left: 0;
@@ -2519,7 +2521,7 @@
 
 
 		#header h3 {
-			color: rgba(255, 255, 255, 0.6);
+			color: rgba(255, 255, 255, 0.9);
 			font-size: 1.20em;
 			line-height: 1.75em;
 			margin: 0;
@@ -2594,7 +2596,7 @@
 /* Misc */
 
 	.highlight_link a{
-		color: #49bf9d;
+		color: #498cbf;
 		border-bottom: none;
 	}
 	
