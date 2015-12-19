@@ -93,7 +93,7 @@
 									a technique for estimating the distance between two position, 
 									to speed up the search by prioritizing certain elements for analysis.
 									<br/><br/>
-									When this estimation is integrated with Dijkstra, where each element is assigned a cost in order to 
+									When Best First Search's estimation is integrated with Dijkstra, where each element is assigned a cost in order to 
 									quantify which path is more expensive than another: an effective search algorithm is created.
 								</p>
 							</article>
@@ -111,21 +111,21 @@
 						
 							<article class="12u$ 12u$(xsmall) work-item">
 								<p>
-									I originally started the project in Python because of its easier to build a working prototype. 
-									I studied A* from various online resources including its original research paper, 
-									but mostly spent my hours debugging by stepping through the code during runtime; 
+									I originally started the project in Python because it was easier to build a working prototype. 
+									I studied A* from various online resources including it's original research paper, 
+									but spent countless hours debugging by stepping through the code during runtime; 
 									although it was repetitive and exhausting, this experience has given me a deeper understanding 
 									and appreciation for pathfinding algorithms.
 									<br/><br/>
 									Midway through the development process I noticed how the algorithm’s performance was lacking, 
-									originally I thought it was Python being slow, but further investigation and searches lead me 
-									to conclude that it was primarily the way I was storing my data.
+									originally I thought it was Python being slow, but further investigation led me 
+									to conclude that it was my lack of an optimized data structure.
 									<br/><br/>
-									A* needs to prioritize certain elements, but storing these elements while keeping its priority was tricky. 
-									A naive attempt, to dump the elements in a list and search for the best one every time, 
-									had tremendous consequences for the performance.
-									Sorting the list every time an element was added or removed also wasn’t going to be helpful because only 
-									a small partition would ever requirement to be reordered.
+									A* needs to prioritize certain elements, but storing these elements while keeping track of priority was tricky. 
+									A naive attempt is to dump the elements in a list and search for the best one every time; 
+									this obviously had tremendous consequences for the performance once the list gets enormous.
+									Sorting the list everytime an element was added or removed also wasn’t going to be helpful because only 
+									a small partition would ever need to be reordered.
 									<br/><br/>
 									To solve this problem I had to use a Priority Queue -also known as a binary heap depending on its implementation- 
 									where elements are stored relative to their priority. The most favoured elements were located the front -or root, 
