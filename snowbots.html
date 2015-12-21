@@ -98,10 +98,9 @@
 						<div class="row">
 							<article class="6u 12u$(xsmall) work-item">
 								<p>
-									Due to my prior experience with pathfinding algorithms, 
-									I was assigned to AI team to collaborate in the development of the robot’s core autonomous navigation software, 
-									here I lead the research and development of various pathfinding algorithms in order to determine a suitable one for navigating a 200 ft by 100 ft 
-									outdoor obstacle course. 
+									Due to my prior experience with <a href="pathfinder"> pathfinding algorithms </a>, 
+									I was assigned to the newly formed AI team to collaborate in the development of the autonomous navigation software, 
+									here I lead the research and development of various pathfinding algorithms in order to determine a suitable one for navigating a 200 ft by 100 ft outdoor obstacle course as required by our competition. 
 									<br/><br/>
 									My current accomplishments include the implementation of static pathfinding algorithms such as A*, 
 									along with dynamic ones like D* Lite and its derivation: MT-D*Lite.
@@ -115,12 +114,11 @@
 						
 							<article class="12u$ work-item">
 								<p>
-									The reason I chose to focus dynamic pathfinding was because our robot must learn about its 
-									surrounding environment as it moves with a limited range of vision, thus producing the problem of dynamic obstacles, 
-									or to be more accurate, the problem of additional obstacles at run-time. 
+									I chose to focus on dynamic pathfinding because our robot must learn about its 
+									surrounding environment as it traverses the course with a limited range of vision, thus producing the problem of changing obstacles, or to be more accurate, the problem of additional obstacles at run-time. 
 									<br/><br/>
 									Dynamic pathfinding algorithms such as D* and MT-D*Lite operate by producing an initial path and re-computing it, 
-									using previous results to minimize computation, when changes are detected -thus making it a suitable solution to our problem.
+									using previous results to minimize computation when changes are detected; thus making it a suitable solution to our problem.
 								</p>
 							</article>
 						</div>
@@ -136,8 +134,8 @@
 						
 							<article class="6u$ 12u$(xsmall) work-item">
 								<p>
-									In addition to pathfinding, the AI team is also responsible for developing the mapping software; 
-									here we faced the challenge of concurrently mapping the surrounding environment while the robot moves and discovers more. 
+									In addition to the pathfinding, the AI team is also responsible for developing the mapping software; 
+									here we faced the challenge of concurrently mapping the surrounding environment while the robot moves and discovers more obsticles. 
 									<br/><br/>
 									We collect our mapping data from the robot’s laser scanner and computer vision system, 
 									in addition to integrating the data with the compass in order to localize ourself on the map.
@@ -151,13 +149,10 @@
 						<div class="row">	
 							<article class="6u 12u$(xsmall) work-item">
 								<p>
-									During the upcoming weeks for competition, I assisted the vision team by profiling the runtime 
-									performance of the camera capturing and image stitching software, 
-									along with implementing some optimizations which resulted in a performance boost by a factor of 4x in best case scenarios.
+									During the upcoming weeks for competition, I assisted the vision team by profiling runtime
+									performance for the camera capturing and image stitching system. I implemented some optimizations with additional OpenCV technologies, which resulted in a performance boost by a factor of 4x in best case scenarios.
 									<br/><br/>
-									I also helped fully integrate our ROS nodes with OpenCV libraries, 
-									and developed a proper emergency shutdown technique to resolve memory leak and port re-connection issues, 
-									resulting in more productive debugging time.
+									Additionally, I also developed a proper emergency shutdown technique in order to resolve memory leak and port re-connection issues, resulting in more productivity as nobody had to constantly reconnect/replug the hardware everytime something goes wrong.
 								</p>
 							</article>
 							
