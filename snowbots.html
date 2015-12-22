@@ -43,10 +43,10 @@
 								<h4>Team photo during the Intelligent Ground Vehicle Competition of 2015</h4>
 								<p>
 									<br/>
-									I joined UBC Snowbots during my first week of university in order to meet other like-minded students 
-									and get an exposure to the field of robotics and automation. The team comprised of about 60 undergraduate 
-									students who are dedicated to the research and development of autonomous ground vehicles. 
-									Although my work primarily relates to software development, I also had the pleasure to work with other 
+									I joined UBC Snowbots during my first week of university in order to meet like-minded peers 
+									and get an exposure to the field of robotics and automation. The entire team is comprised of around 60 undergraduate 
+									students who are dedicated to the research and development of autonomous ground vehicles; 
+									although my work with Snowbots focuses only on software development, I had the pleasure to work with other 
 									students who are developing the mechanical and electrical portion.
 								</p>
 							</article>
@@ -54,9 +54,9 @@
 							<article class="6u 12u(xsmall) work-item">
 								<p>
 									During my first year with Snowbots I was one of eight members selected to attend the team’s annual competition; 
-									this was also the team’s second time returning to the Intelligent Ground Vehicle Competition (IGVC), hosted by Oakland University in Michigan. 
+									that year was also the team’s second time returning to the Intelligent Ground Vehicle Competition (IGVC), hosted by Oakland University in Michigan.
 									<br/><br/>
-									We managed to rank 4th in design and 5th in IOP networking challenge, out of the 40 registered teams from around the world!
+									We managed to place 4th in design category and 5th in the IOP networking challenge, out of the 40 registered teams from around the world!
 								</p>
 							</article>
 							
@@ -68,6 +68,7 @@
 						</div>
 						
 						<hr>
+
 						<h1 class="uppercase"><span class="icon fa-wrench"></span> Technical details and Responsibilities</h1>
 						
 						<div class="row">
@@ -79,16 +80,13 @@
 							<article class="6u$ 12u$(xsmall) work-item">
 								<p>
 									The software portion of our robot is primarily written in C++, using the Robot Operating System (ROS) framework, 
-									with some specific portions written in Python and C. 
+									with some specific portions designed in Python and C. 
 									<br/><br/>
-									In the vision system we also use OpenCV to provide fast 
-									image processing and capturing techniques, which is essential to our performance critical situation, especially when our 
-									software executes on a consumer laptop running Ubuntu.
+									For the vision system we use OpenCV to obtain fast image processing and capturing from the cameras, which is essential to our performance critical situation, especially when our software executes on a consumer grade laptop running Ubuntu.
 									<br/><br/>
-									As a member of the software team, I am also responsible for maintaining the codebase shared with over 10 active developers by following the team’s 
-									coding standards and resolving version control conflicts.
+									As a member of the software team, I am also responsible for maintaining the codebase shared with over 10 active developers by following the team’s coding standards and resolving version control conflicts.
 									<br/><br/>
-									I am also responsible for upholding safety protocols in a workshop environment, along with handling fragile equipments each worth over $1,000 
+									I am also responsible for handling various fragile equipments each worth over $1,000 
 									-including a large LIDAR laser scanner, estimated to be worth around $6,000!
 								</p>
 							</article>
@@ -100,10 +98,9 @@
 						<div class="row">
 							<article class="6u 12u$(xsmall) work-item">
 								<p>
-									Due to my prior experience with pathfinding algorithms, 
-									I was assigned to AI team to collaborate in the development of the robot’s core autonomous navigation software, 
-									here I lead the research and development of various pathfinding algorithms in order to determine a suitable one for navigating a 200 ft by 100 ft 
-									outdoor obstacle course. 
+									Due to my prior experience with <a href="pathfinder"> pathfinding algorithms </a>, 
+									I was assigned to the newly formed AI team to collaborate in the development of the autonomous navigation software, 
+									here I lead the research and development of various pathfinding algorithms in order to determine a suitable one for navigating a 200 ft by 100 ft outdoor obstacle course as required by our competition. 
 									<br/><br/>
 									My current accomplishments include the implementation of static pathfinding algorithms such as A*, 
 									along with dynamic ones like D* Lite and its derivation: MT-D*Lite.
@@ -117,12 +114,11 @@
 						
 							<article class="12u$ work-item">
 								<p>
-									The reason I chose to focus dynamic pathfinding was because our robot must learn about its 
-									surrounding environment as it moves with a limited range of vision, thus producing the problem of dynamic obstacles, 
-									or to be more accurate, the problem of additional obstacles at run-time. 
+									I chose to focus on dynamic pathfinding because our robot must learn about its 
+									surrounding environment as it traverses the course with a limited range of vision, thus producing the problem of changing obstacles, or to be more accurate, the problem of additional obstacles at run-time. 
 									<br/><br/>
 									Dynamic pathfinding algorithms such as D* and MT-D*Lite operate by producing an initial path and re-computing it, 
-									using previous results to minimize computation, when changes are detected -thus making it a suitable solution to our problem.
+									using previous results to minimize computation when changes are detected; thus making it a suitable solution to our problem.
 								</p>
 							</article>
 						</div>
@@ -138,8 +134,8 @@
 						
 							<article class="6u$ 12u$(xsmall) work-item">
 								<p>
-									In addition to pathfinding, the AI team is also responsible for developing the mapping software; 
-									here we faced the challenge of concurrently mapping the surrounding environment while the robot moves and discovers more. 
+									In addition to the pathfinding, the AI team is also responsible for developing the mapping software; 
+									here we faced the challenge of concurrently mapping the surrounding environment while the robot moves and discovers more obsticles. 
 									<br/><br/>
 									We collect our mapping data from the robot’s laser scanner and computer vision system, 
 									in addition to integrating the data with the compass in order to localize ourself on the map.
@@ -153,13 +149,10 @@
 						<div class="row">	
 							<article class="6u 12u$(xsmall) work-item">
 								<p>
-									During the upcoming weeks for competition, I assisted the vision team by profiling the runtime 
-									performance of the camera capturing and image stitching software, 
-									along with implementing some optimizations which resulted in a performance boost by a factor of 4x in best case scenarios.
+									During the upcoming weeks for competition, I assisted the vision team by profiling runtime
+									performance for the camera capturing and image stitching system. I implemented some optimizations with additional OpenCV technologies, which resulted in a performance boost by a factor of 4x in best case scenarios.
 									<br/><br/>
-									I also helped fully integrate our ROS nodes with OpenCV libraries, 
-									and developed a proper emergency shutdown technique to resolve memory leak and port re-connection issues, 
-									resulting in more productive debugging time.
+									Additionally, I also developed a proper emergency shutdown technique in order to resolve memory leak and port re-connection issues, resulting in more productivity as nobody had to constantly reconnect/replug the hardware everytime something goes wrong.
 								</p>
 							</article>
 							
