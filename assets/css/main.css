@@ -2500,7 +2500,7 @@
 	#header {
 		background-color: rgba(0.0, 0.0, 0.0, 0.5);
 		background-attachment: scroll,				 fixed;
-		background-image: url("images/overlay.png"), url("../../images/bg3.jpg");
+		background-image: url("images/overlay.png"), url("../../images/bg4.jpg");
 		background-position: top left,				 top left;
 		background-repeat: repeat,					 no-repeat;
 		background-size: auto,						 auto;
