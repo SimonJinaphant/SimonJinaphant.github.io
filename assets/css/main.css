@@ -2513,6 +2513,12 @@
 		text-align: right;
 		top: 0;
 		width: 30%;
+
+		text-shadow:
+			-1px -1px 0 #444,
+			1px -1px 0 #444,
+			-1px 1px 0 #444,
+			1px 1px 0 #444;
 	}
 
 		#header strong, #header b {
@@ -3038,16 +3044,16 @@
 					}
 				
 				#header .image.avatar {
-					/*CHANGE AVATAR SIZE -FOR SMALL DEVICE- HERE*/
-					width: 140px;
-					height: 140px;
+					/*CHANGE AVATAR SIZE (Tablet)*/
+					width: 8em;
+					height: 8em;
 					margin-top: -30px;
 					float:left;
 				}
 				
 				#header .image.avatar img{
-					/*CHANGE AVATAR SIZE -FOR SMALL DEVICE- HERE*/
-					width: 140px;
+					/*CHANGE AVATAR SIZE (Tablet)*/
+					width: 8em;
 					display: inline;
 				}
 				
@@ -3146,20 +3152,26 @@
 				padding: 2.25em 1.5em;
 			}
 
-				#header h1 {
-					font-size: 1.35em;
+				#header h3 {
+					display:none;
 				}
 				
 				#header .image.avatar {
-					/*CHANGE AVATAR SIZE -FOR SMALL DEVICE- HERE*/
-					display: none;
-				}
-				
-				/*Hide labels when screen is tight on space*/
-				
-				#header .icon > .label {
+					/*CHANGE AVATAR SIZE (Mobile Landscape)*/
+					width: 6em;
+					height: 6em;
+					float: none;
 				}
 
+				#header .image.avatar img {
+					/*CHANGE AVATAR SIZE (Mobile Landscape)*/
+					width: 6em;
+					display: block;
+				}
+
+				#header ul.icons{
+					display: block;
+				}
 
 		/* Footer */
 
