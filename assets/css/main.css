@@ -2112,6 +2112,10 @@
 		margin-left: 1em;
 		
 	}
+	
+	ul.indent li{
+		margin-bottom: 1em;
+	}
 
 	ol {
 		list-style: decimal;
