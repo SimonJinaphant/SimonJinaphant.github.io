@@ -2116,6 +2116,12 @@
 	ul.indent li{
 		margin-bottom: 1em;
 	}
+	
+	ul.indent li ul{
+		margin-left: 1em;
+		list-style: circle;
+	}
+
 
 	ol {
 		list-style: decimal;
