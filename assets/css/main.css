@@ -2644,6 +2644,12 @@ ul.inline{
 		min-width: 50px;
 		text-align: center;
 	}
+	
+	ul.inline li.framework {
+		background-color: #fff;
+		border: 1px solid #ccc;
+		color: inherit;
+	}
 
 
 /* Resume */
