@@ -2645,11 +2645,12 @@ ul.inline{
 		text-align: center;
 	}
 	
-	ul.inline li.framework {
+	ul.inline li.invert {
 		background-color: #fff;
 		border: 1px solid #ccc;
 		color: inherit;
 	}
+
 
 
 /* Resume */
