@@ -2611,19 +2611,37 @@
 
 /* Misc */
 
-	.highlight_link a{
-		color: #498cbf;
-		border-bottom: none;
-	}
+.highlight_link a{
+	color: #498cbf;
+	border-bottom: none;
+}
 	
-	.no_bullets{
-		list-style: none;
-		padding-left: 0em;
-		
+.no_bullets{
+	list-style: none;
+	padding-left: 0em;	
+}
+
+	.no_bullets li{
+		margin-bottom: 0.5em;
 	}
-		.no_bullets li{
-			margin-bottom: 0.5em;
-		}
+
+ul.inline{
+	margin: 0px;
+	padding: 0px;
+	font-family: "Open Sans";
+	font-size: 0.8em;
+}
+
+	ul.inline li{
+		display: inline-block;
+		background-color: #19364c;
+		border: 1px solid #eee;
+		color:#f4f4f4;
+		margin: 0px;
+		padding: 2px 10px;
+		border-radius: 5px;
+		cursor: default;
+	}
 
 
 /* Resume */
