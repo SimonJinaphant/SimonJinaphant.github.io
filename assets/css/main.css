@@ -2650,6 +2650,11 @@ ul.inline{
 		border: 1px solid #ccc;
 		color: inherit;
 	}
+	
+	ul.inline li.invert a{
+		text-decoration: none;
+		border-bottom: none;
+	}
 
 
 
