@@ -2640,12 +2640,17 @@ ul.inline{
 		margin: 0px;
 		padding: 2px 10px;
 		border-radius: 5px;
-		cursor: default;
 		min-width: 50px;
 		text-align: center;
 	}
 	
 	ul.inline li.invert {
+		background-color: #fff;
+		border: 1px solid #285d85;
+		color: #285d85;
+	}
+	
+	ul.inline li.grey {
 		background-color: #fff;
 		border: 1px solid #ccc;
 		color: inherit;
