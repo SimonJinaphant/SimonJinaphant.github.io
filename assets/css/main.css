@@ -2625,19 +2625,16 @@
 		margin-bottom: 0.5em;
 	}
 
-ul.inline{
+ul.inline_list{
 	margin: 0px;
 	padding: 0px;
 	font-family: "Open Sans";
 	font-size: 0.8em;
 }
 
-	ul.inline li{
+	ul.inline_list li{
 		display: inline-block;
-		background-color: #19364c;
-		border: 1px solid #eee;
-		color:#f4f4f4;
-		margin: 0px;
+			margin: 0px;
 		margin-bottom: 5px;
 		padding: 2px 10px;
 		border-radius: 5px;
@@ -2645,18 +2642,25 @@ ul.inline{
 		text-align: center;
 	}
 	
-	ul.inline li.invert {
+	ul.inline_list li.dark{
+		background-color: #19364c;
+		border: 1px solid #eee;
+		color:#f4f4f4;
+
+	}
+	
+	ul.inline_list li.light {
 		background-color: #fff;
 		border: 1px solid #285d85;
 		color: #285d85;
 	}
 	
-	ul.inline a li.invert{
+	ul.inline_list a li{
 		text-decoration: none;
 		margin-bottom: 5px;
 	}
 	
-	ul.inline li.grey {
+	ul.inline_list li.grey {
 		background-color: #fff;
 		border: 1px solid #ccc;
 		color: inherit;
