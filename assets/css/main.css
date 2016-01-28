@@ -2667,7 +2667,18 @@ ul.inline_list{
 	}
 	
 
+#profile_picture{
+	border: 1px solid #aaa;
+	box-shadow: 2px 2px 3px #ccc;
+}
 
+.major hr{
+	margin: 0px 0px 10px 0px;
+}
+
+ul.circle_points{
+	list-style: circle;	
+}
 
 
 /* Resume */
