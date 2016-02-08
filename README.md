@@ -1,5 +1,5 @@
 #SIMONJINAPHANT.GITHUB.IO
-This repository contains the code for my [personal website](http://simonjinaphant.github.io/) 
+This repository contains the code for my [personal website](http://simonjinaphant.github.io/)
 which contains more information about me along with a portfolio of my work.
 
 ##Credits
