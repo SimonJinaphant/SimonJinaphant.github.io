@@ -113,18 +113,34 @@
 							</article>
 
 							<article class="12u$ 12u$(xsmall) work-item">
-																<img class="image fit" src="images/thumbs/arduinowalle/bluetoothbanner.jpg" alt="" />
+								<img class="image fit" src="images/thumbs/arduinowalle/bluetoothbanner.jpg" alt="" />
 								<h1 class="uppercase"><span class="icon fa-gears"></span> The Communication</h1>
 								<p>
-									Everti feugiat appellantur eu pro, per lorem putant eripuit et, per stet velit ex.
-									Eu duis utroque iracundia pro, alia decore appellantur ex cum. Et eos malis summo soluta,
-									invidunt argumentum sea eu. Id eos prima saperet contentiones.
+									This part of the lab was the additional functionality left for the team to freely implement;
+									for this feature we chose to implement remote user interface/control functionality over Bluetooth.
+									Smartphones are ubiquitous these days and so is bluetooth.
+									<br/><br/>
+									The combination provides the best possible user interface to the robot.
+									We also added Voice Recognition to increase accessibility and the coolness factor.
+									<br/><br/>
+									Using an HC-06 bluetooth module, we connected the robot/Arduino to an Android mobile
+									app that has a GUI for changing between Line Following, autonomous, and manual control model.
+									We also used the Google Speech API  for predefined voice commands,
+									but dropped the feature because the professor told us not to include any internet enabled applications.
+									<br/><br/>
+									Instead, we leveraged the phone’s internal gyroscope sensor to add tilt to move functionality
+									and shake to wiggle functionality. To continue with the Rapid Prototyping spirit of the Arduino platform,
+									MIT App Inventor (http://appinventor.mit.edu) was used to develop the Android app that served
+									as the remote user interface to control the robot. This tool allowed for incredibly fast
+									development without wasting time diving into the nitty gritty details of Android app Development.
+									New features and functionality were added in seconds, therefore development time wasn’t a limiting factor.
+									Though the interface/creation process may seem simplistic, one can create complex and
+									powerful apps with minimal limitations.
+									<br/><br/>
+									The Bluetooth module allowed for two-way serial communication over Pins 0 and 1.
+									Command were sent over Serial input from phone to Arduino,
+									and status data was sent from Arduino to phone.
 
-									Iusto invidunt eum ne, unum offendit apeirian ex sed, at primis aliquam dissentias his.
-									Melius blandit delicata usu in, solet doctus intellegat ne per, cu illum oblique quaerendum sit.
-									An eum error iisque mandamus, sea an quando eruditi. Summo interpretaris quo ne, quot posidonium vel et.
-									Mel ut fugit elitr petentium, has nonumy habemus an. Quas torquatos definiebas eum at, sed ferri affert
-									commune eu, adolescens elaboraret est ei.
 								</p>
 							</article>
 
@@ -138,15 +154,19 @@
 								<img class="image fit" src="images/thumbs/arduinowalle/arduinobanner.jpg" alt="" />
 								<h4>...Image caption...</h4>
 								<p>
-									Everti feugiat appellantur eu pro, per lorem putant eripuit et, per stet velit ex.
-									Eu duis utroque iracundia pro, alia decore appellantur ex cum. Et eos malis summo soluta,
-									invidunt argumentum sea eu. Id eos prima saperet contentiones.
-
-									Iusto invidunt eum ne, unum offendit apeirian ex sed, at primis aliquam dissentias his.
-									Melius blandit delicata usu in, solet doctus intellegat ne per, cu illum oblique quaerendum sit.
-									An eum error iisque mandamus, sea an quando eruditi. Summo interpretaris quo ne, quot posidonium vel et.
-									Mel ut fugit elitr petentium, has nonumy habemus an. Quas torquatos definiebas eum at, sed ferri affert
-									commune eu, adolescens elaboraret est ei.
+									In this project we were able to culminate all our knowledge from the previous labs
+									to create a multi-functional robot; we were able to use our knowledge of displays,
+									various sensors, wiring practices, and soldering. We also learned how to use hall
+									effect sensors, reflective optical sensors, and how to wire an Arduino to an external power source.
+									Although there were some complications regarding the hall effect sensors, our robot was able to
+									perform reasonably well most of the time.
+									<br/><br/>
+									Our additional functionality was the ability to control our robot via a bluetooth connection.
+									Once integrated, it worked quite well with our robot, and effectively made the button obsolete.
+									This freed up some pins, which we could have used for another component if we had some more time.
+									<br/><br/>
+									We would definitely recommend including the HC-06 bluetooth module in lab kits for future courses.
+									It’s relatively cheap ($6) and offers a lot of freedom through its wireless capability.
 								</p>
 							</article>
 						</div>
