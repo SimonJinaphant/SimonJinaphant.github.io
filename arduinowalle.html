@@ -42,9 +42,11 @@
 								<a href="images/fulls/arduinowalle/overview.jpg" class="image fit thumb"><img src="images/thumbs/arduinowalle/overview.jpg" alt="" /></a>
 								<h4>An overview image of our team's robot</h4>
 								<p>
-									Vis an nibh appareat. Pro in libris sanctus propriae. Mei ne ludus nobis populo. Ut tritani blandit est,
-									has assum mandamus cu, ei cum mundi epicuri. Sale soleat eu vim. Ex eos sale primis volutpat, enim nobis
-									conclusionemque cu per.
+									This project is a showcase of the various skills we learned in the labs for ELEC 291.
+									The objective is to implement a multi functional robot using an Arduino,
+									a 2 wheel drive mobile platform, and various sensors.
+									The robot must have two principle functions defined by the instructor and one
+									additional function left to be defined and implemented by the students.
 								</p>
 							</article>
 						</div>
@@ -53,31 +55,24 @@
 						<h1 class="uppercase"><span class="icon fa-check-square-o"></span> Requirements and Responsibilities</h1>
 
 						<div class="row">
-							<article class="6u 12u$(xsmall) work-item">
-								<a href="images/fulls/launchers/circuits.jpg" class="image fit thumb"><img src="images/thumbs/launchers/circuits.jpg" alt="" /></a>
-								<h4>...Caption here...</h4>
-							</article>
-
-							<article class="6u$ 12u$(xsmall) work-item">
-								<p>
-									Lorem ipsum dolor sit amet, odio graeci intellegat qui ex.
-									Offendit legendos constituam quo at, posse inani dictas ad est.
-									Prima sadipscing concludaturque no qui. Eam at autem liber, pri ea erant periculis deseruisse,
-									usu ridens delicata voluptatum et. No mel meis posse, facer saepe adipisci ea eum, adhuc solum clita quo ne.
-								</p>
-							</article>
-
 							<article class="12u$ 12u$(xsmall) work-item">
 								<p>
-									Everti feugiat appellantur eu pro, per lorem putant eripuit et, per stet velit ex.
-									Eu duis utroque iracundia pro, alia decore appellantur ex cum. Et eos malis summo soluta,
-									invidunt argumentum sea eu. Id eos prima saperet contentiones.
-
-									Iusto invidunt eum ne, unum offendit apeirian ex sed, at primis aliquam dissentias his.
-									Melius blandit delicata usu in, solet doctus intellegat ne per, cu illum oblique quaerendum sit.
-									An eum error iisque mandamus, sea an quando eruditi. Summo interpretaris quo ne, quot posidonium vel et.
-									Mel ut fugit elitr petentium, has nonumy habemus an. Quas torquatos definiebas eum at, sed ferri affert
-									commune eu, adolescens elaboraret est ei.
+									Autonomous Mode<br/><br/>
+								 - The robot operates autonomously
+								 - The robot must move at the maximum speed forward
+								 - If an object is detected in front of the robot, it slows down gradually
+								 - The robot must stop within a close distance of the object
+								 - An ultrasonic sensor attached to a servo is then used to scan the area around it
+								 - The robot turns 90 degrees left or right depending on the farthest distance received by the sensor
+								 <br/><br/>Line Following Mode<br/><br/>
+							 - The robot operates autonomously
+							 - The robot uses reflective optical sensors to guide itself along a path on the ground
+							 - The path is a line that is darker than the background
+							 <br/><br/>Bluetooth Mode<br/><br/>
+							  - The robot operates through human inputs from a Bluetooth enabled controller
+							  - The robot moves forward and backward through input
+							  - The robot rotates left and right through input
+							  - The robot can also do special patterns from a specific input
 								</p>
 							</article>
 						</div>
@@ -89,15 +84,15 @@
 																<img class="image fit" src="images/thumbs/arduinowalle/ultrasonicbanner.jpg" alt="" />
 								<h1 class="uppercase"><span class="icon fa-gears"></span> The Sensors</h1>
 								<p>
-									Everti feugiat appellantur eu pro, per lorem putant eripuit et, per stet velit ex.
-									Eu duis utroque iracundia pro, alia decore appellantur ex cum. Et eos malis summo soluta,
-									invidunt argumentum sea eu. Id eos prima saperet contentiones.
-
-									Iusto invidunt eum ne, unum offendit apeirian ex sed, at primis aliquam dissentias his.
-									Melius blandit delicata usu in, solet doctus intellegat ne per, cu illum oblique quaerendum sit.
-									An eum error iisque mandamus, sea an quando eruditi. Summo interpretaris quo ne, quot posidonium vel et.
-									Mel ut fugit elitr petentium, has nonumy habemus an. Quas torquatos definiebas eum at, sed ferri affert
-									commune eu, adolescens elaboraret est ei.
+									This part of the lab included integrating the temperature sensor,
+									ultrasonic range finder (HC-SR04), and servo with the robot built in the previous section.
+									It was set up so that the robot moved forward until it detected an object with the
+									ultrasonic range finder and gradually slows down in order to avoid collision.
+									Once it stops, the servo would rotate the ultrasonic range finder so it could take
+									in data about its surroundings. With this data, the robot would then decide whether
+									to turn left or right based on which side returned a longer distance.
+									The temperature sensor was added to make the ultrasonic range finder more accurate
+									by better approximating the speed of sound.
 								</p>
 							</article>
 
