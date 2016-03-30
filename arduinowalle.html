@@ -112,24 +112,22 @@
 								<img class="image fit" src="images/thumbs/arduinowalle/bluetoothbanner.jpg" alt="" />
 								<h1 class="uppercase"><span class="icon fa-gears"></span> Bluetooth Communication</h1>
 								<p>
-									This part of the lab was the additional functionality left for the team to freely implement;
-									for this feature we chose to implement remote user interface/control functionality over Bluetooth.
-									Smartphones are ubiquitous these days and so is bluetooth.
+									For our team's additional functionality we chose to implement remote user interface/
+									control functionality via Bluetooth.
+									Smartphones are ubiquitous these days which makes them an ideal bluetooth controller.
+									We also added Voice Recognition capabilities via Google's Speech API to increase accessibility
+									and the coolness factor.
 									<br/><br/>
-									The combination provides the best possible user interface to the robot.
-									We also added Voice Recognition to increase accessibility and the coolness factor.
+									Using a HC-06 bluetooth module, we connected the robot to an Android mobile
+									app that has a GUI for changing between the various modes: Line Following, autonomous, and manual control model.
+									We used the Google Speech API to set predefined voice commands which would trigger certain actions of the robot,
+									however we later dropped the feature because due to criteria demands.
 									<br/><br/>
-									Using an HC-06 bluetooth module, we connected the robot/Arduino to an Android mobile
-									app that has a GUI for changing between Line Following, autonomous, and manual control model.
-									We also used the Google Speech API  for predefined voice commands,
-									but dropped the feature because the professor told us not to include any internet enabled applications.
-									<br/><br/>
-									Instead, we leveraged the phone’s internal gyroscope sensor to add tilt to move functionality
-									and shake to wiggle functionality. To continue with the Rapid Prototyping spirit of the Arduino platform,
+									Alternatively, we leveraged the phone’s internal gyroscope sensor to add tilt motion for moving, and a shake motion
+									to make the robot wiggle in place. To continue with the Rapid Prototyping spirit of the Arduino platform,
 									MIT App Inventor (http://appinventor.mit.edu) was used to develop the Android app that served
 									as the remote user interface to control the robot. This tool allowed for incredibly fast
-									development without wasting time diving into the nitty gritty details of Android app Development.
-									New features and functionality were added in seconds, therefore development time wasn’t a limiting factor.
+									development without wasting time with the details of Android app Development.
 									Though the interface/creation process may seem simplistic, one can create complex and
 									powerful apps with minimal limitations.
 									<br/><br/>
