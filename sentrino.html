@@ -63,13 +63,26 @@
 
 							<article class="12u$ 12u$(xsmall) work-item">
 								<p>
-									<h3>Autonomous Mode</h3>
+									<h3>Remote Access</h3>
 									<ul>
-
+										<li>Streams a camera feed over WiFi to a website from the USB webcam and Raspberry PI</li>
+										<li>User can type messages on the website which will be relay
+											to an audio speaker near the sentry using Text ­to ­Speech</li>
+										<li>Remote manual control via keyboard arrow keys or on­screen buttons, adjusting pitch and yaw position</li>
 									</ul>
-									<h3>Wifi Control Mode</h3>
+									<h3>Sentry Mode: Autonomous Serveillance</h3>
 									<ul>
-
+										<li>Processes a live image feed from the webcam,
+											differentiating friendlies from intruders by colour</li>
+										<li>The sentry moves the webcam to follow the intruder if they are on the screend</li>
+										<li>Detecting an intruder on the screen for more than two seconds raises the alarm</li>
+									</ul>
+									<h3>Sentry Mode: Alarm Mode</h3>
+									<ul>
+										<li>The Piezo buzzer rapidly beeps and the yellow LED is turns on</li>
+										<li>Webcam starts video recording and stores it in a file server for future access</li>
+										<li>The user receives a notification through SMS regarding the alarm raised</li>
+										<li>Alarm can be disabled if the proper keycode is entered with the keypad</li>
 									</ul>
 								</p>
 							</article>
