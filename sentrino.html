@@ -95,7 +95,7 @@
 								<img class="image fit" src="images/thumbs/arduinowalle/ultrasonicbanner.jpg" alt="" />
 								<h1 class="uppercase"><span class="icon fa-gears"></span> Hardware</h1>
 								<p>
-									In order to keep the wires organized, having breadboards on the platform was essential
+									In order to keep the wires organized, having the breadboards on the platform was essential
 									since it had to be in close proximity to all of the hardware.
 									As a result, the Pi had to be kept separate from the platform to free up space for the breadboards.
 									However, this worked to our advantage because it allowed us to connect external devices
@@ -105,14 +105,13 @@
 									this included a keypad, an LCD, an LED, a Piezo buzzer and servo motors.
 									The Arduino was incompatible with other USB cables and audio plugs so the
 									webcam and the speakers were connected directly to the Pi.
-									<br/><br/>
 									As for other external devices, we had a keyboard and a monitor connected to the Pi
 									so that we were able to program on the Pi.
 									<br/><br/>
 									We initially powered the Arduino from the Pi, but found that this causes
 									issues with the communication between the two modules.
-									Thus we had to give the Arduino its own power source from its DC power jack through an adapter.
-									After this change, the system ran more smoothly.
+									Thus we had to give the Arduino its own power source from its DC power jack through an adapter;
+									after this change, the system ran more smoothly.
 								</p>
 							</article>
 
@@ -120,7 +119,36 @@
 								<img class="image fit" src="images/thumbs/arduinowalle/wheelbanner.jpg" alt="" />
 								<h1 class="uppercase"><span class="icon fa-gears"></span> Image Processing</h1>
 								<p>
-
+										This part of the project included creating a video stream from the webcam,
+										a server to host the web page, a listener script to listen for command from
+										the remote interface and a file server to show saved webcam recordings.
+										<br/><br/>
+										The webpage has onscreen buttons and keyboard control which in turn control the Raspberry Pi,
+										and by extension the Arduino (remote access). Furthermore, the user can send text messages
+										from the website that is relayed to the speaker by text to speech.
+										<br/><br/>
+										The images are taken from the camera through OpenCV ­ an open source computer vision library.
+										The processed video stream is then broken up into single JPEG frames.
+										We used the Flask web framework to create an MJPEG stream;
+										this stream can be embedded as any regular image on the web page
+										except it automatically updates with new frames, in essence becoming a stream.
+										<br/><br/>
+										As with all livestreams, latency is an important factor to keep in mind.
+										The latency was due to our wireless internet connection being a phone’s hotspot.
+										Coupled with low transfer speeds around 50kb/s, it was important for us to make every byte count.
+										First, the image is reduced from 640px x 480px to 100px x 67px before being sent to the website.
+										The quality of the image is greatly reduced, but we get better framerates and smoothness in the end.
+										<br/><br/>
+										The webpage where the video feed is displayed is simple. It contains the video stream,
+										with buttons overlayed to control the webcam orientation.
+										When a button is pressed, a XHR request is sent to the listener script running on the Raspberry Pi.
+										The keyboard arrow keys also call on these same requests.
+										<br/><br/>
+										The listener script then translates this requests to serial commands to send to the arduino.
+										The listener script is also a Flask application. There is a text box also on the website,
+										where the user can submit text that is to be spoken on the speaker.
+										The text is transferred over an XHR request as well to the same listener script running on the Pi.
+										The listener script then uses the pyttsx text to speech engine to output the speech from the Pi’s audio jack.
 								</p>
 							</article>
 
