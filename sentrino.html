@@ -93,9 +93,26 @@
 						<div class="row">
 							<article class="12u$ 12u$(xsmall) work-item">
 								<img class="image fit" src="images/thumbs/arduinowalle/ultrasonicbanner.jpg" alt="" />
-								<h1 class="uppercase"><span class="icon fa-gears"></span> Mechanical Design</h1>
+								<h1 class="uppercase"><span class="icon fa-gears"></span> Hardware</h1>
 								<p>
-										<h4></h4>
+									In order to keep the wires organized, having breadboards on the platform was essential
+									since it had to be in close proximity to all of the hardware.
+									As a result, the Pi had to be kept separate from the platform to free up space for the breadboards.
+									However, this worked to our advantage because it allowed us to connect external devices
+									such as a monitor and a keyboard to the Pi easily.
+									<br/><br/>
+									The Arduino was used to integrate all of the hardware components;
+									this included a keypad, an LCD, an LED, a Piezo buzzer and servo motors.
+									The Arduino was incompatible with other USB cables and audio plugs so the
+									webcam and the speakers were connected directly to the Pi.
+									<br/><br/>
+									As for other external devices, we had a keyboard and a monitor connected to the Pi
+									so that we were able to program on the Pi.
+									<br/><br/>
+									We initially powered the Arduino from the Pi, but found that this causes
+									issues with the communication between the two modules.
+									Thus we had to give the Arduino its own power source from its DC power jack through an adapter.
+									After this change, the system ran more smoothly.
 								</p>
 							</article>
 
