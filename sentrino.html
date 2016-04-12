@@ -127,24 +127,23 @@
 										and by extension the Arduino (remote access). Furthermore, the user can send text messages
 										from the website that is relayed to the speaker by text to speech.
 										<br/><br/>
-										The images are taken from the camera through OpenCV ­ an open source computer vision library.
-										The processed video stream is then broken up into single JPEG frames.
-										We used the Flask web framework to create an MJPEG stream;
-										this stream can be embedded as any regular image on the web page
-										except it automatically updates with new frames, in essence becoming a stream.
+										The images are taken from the camera through OpenCV an open source computer vision library.
+										The processed video stream is then broken up into individual JPEG frames where we used the
+										Flask web framework to create an MJPEG stream; this stream can be embedded as any regular
+										image on the web page except it automatically updates with new frames, becoming a image livestream.
 										<br/><br/>
 										As with all livestreams, latency is an important factor to keep in mind.
 										The latency was due to our wireless internet connection being a phone’s hotspot.
 										Coupled with low transfer speeds around 50kb/s, it was important for us to make every byte count.
-										First, the image is reduced from 640px x 480px to 100px x 67px before being sent to the website.
-										The quality of the image is greatly reduced, but we get better framerates and smoothness in the end.
+										First, the image is reduced from (640px x 480px) to (100px x 67px) before being sent to the website.
+										The quality of the image is greatly reduced, but we got better framerates and smoothness in the end.
 										<br/><br/>
 										The webpage where the video feed is displayed is simple. It contains the video stream,
 										with buttons overlayed to control the webcam orientation.
 										When a button is pressed, a XHR request is sent to the listener script running on the Raspberry Pi.
 										The keyboard arrow keys also call on these same requests.
-										<br/><br/>
 										The listener script then translates this requests to serial commands to send to the arduino.
+										<br/><br/>
 										The listener script is also a Flask application. There is a text box also on the website,
 										where the user can submit text that is to be spoken on the speaker.
 										The text is transferred over an XHR request as well to the same listener script running on the Pi.
