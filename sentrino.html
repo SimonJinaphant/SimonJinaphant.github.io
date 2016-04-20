@@ -42,19 +42,19 @@
 								<a href="images/fulls/sentrino/overview.jpg" class="image fit thumb"><img src="images/thumbs/sentrino/overview.jpg" alt="" /></a>
 								<h4>Project SentrINO: An Internet-of-Things enabled security system</h4>
 								<p>
-									This project showcase the various skills students learned in the labs of ELEC 291, a second year project design course.
+									This project showcase the various skills learned in the labs of ELEC 291, a second year project design course.
 									For this project, students in groups of six were free to choose what we created as long as it interacted with
 									the internet and embodied the principles of "Internet of Things".
 									<br/><br/>
-									My group chose to implement a home security robot that behaves in response to its
-									environment and be controlled over the internet; this was accomplished using a
+									My group chose to implement a home security robot that autonomously reacts to its
+									environment and be manually controlled over the internet; this was accomplished using a
 									Raspberry Pi, Arduino, a USB webcam, a webserver, and various electronic components.
 								</p>
 							</article>
 						</div>
 
 						<hr>
-						<h1 class="uppercase"><span class="icon fa-check-square-o"></span> Overview</h1>
+						<h1 class="uppercase"><span class="icon fa-check-square-o"></span> Systems Overview</h1>
 
 						<div class="row">
 							<article class="12u$ 12u$(xsmall) work-item">
@@ -65,16 +65,18 @@
 								<p>
 									<h3>Remote Access</h3>
 									<ul>
-										<li>Streams a camera feed over WiFi to a website from the USB webcam and Raspberry PI</li>
+										<li>Streams a camera feed to a website via WiFi from the USB webcam and Raspberry PI</li>
 										<li>User can type messages on the website which will be relay
-											to an audio speaker near the sentry using Text ­to ­Speech</li>
-										<li>Remote manual control via keyboard arrow keys or on­screen buttons, adjusting pitch and yaw position</li>
+											to an audio speaker near the sentry robot using Text-to-­Speech</li>
+										<li>Remote manual control via keyboard arrow keys or on­screen buttons,
+											adjusting pitch and yaw position of the webcam
+										</li>
 									</ul>
 									<h3>Sentry Mode: Autonomous Serveillance</h3>
 									<ul>
 										<li>Processes a live image feed from the webcam,
-											differentiating friendlies from intruders by colour</li>
-										<li>The sentry moves the webcam to follow the intruder if they are on the screend</li>
+											differentiating friendlies from intruders base on a pre-defined colour</li>
+										<li>The sentry moves the webcam to follow the intruder if they are on the screen</li>
 										<li>Detecting an intruder on the screen for more than two seconds raises the alarm</li>
 									</ul>
 									<h3>Sentry Mode: Alarm Mode</h3>
