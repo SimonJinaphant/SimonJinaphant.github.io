@@ -3006,7 +3006,7 @@ ul.circle_points{
 
 			#main {
 				margin-left: 30%;
-				max-width: 960;
+				max-width: 54em;
 				padding: 6em 3em 3em 3em;
 			}
 			#header h3{
@@ -3020,8 +3020,17 @@ ul.circle_points{
 
 	@media screen and (max-width: 1280px) {
 
-		/* Header */
+		body, input, select, textarea {
+			font-size: 12pt;
+		}
 
+
+		#header h3{
+			max-width: 360px;
+			margin-left: auto;
+		}
+
+		/* Header */
 			#header {
 				padding: 6em 3em 3em 3em;
 				/*---Make sure this is the same as the #footer---*/
@@ -3059,10 +3068,6 @@ ul.circle_points{
 		/* Main */
 
 			#main {
-				margin-left: 30%;
-				max-width: none;
-				padding: 6em 3em 3em 3em;
-				width: calc(100% - 30%);
 
 			}
 
